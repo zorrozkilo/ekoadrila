@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="img/favicon-ekoadrila.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/traduccion.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <title>Ekoadrila | Material Prensa</title>
+	<meta name="description"
+        content='¡Hola! Rellena el "Test del Reciclaje" de la Ekoadrila y entra en un súper sorteo. Y si nos ves por la calle, ¡regalo seguro! ¡Vamos a estar por toda Euskadi! ¡Infórmate aquí de cuándo vamos por tu zona!'>
+	<meta name="facebook-domain-verification" content="43oimjit10sd2mylv00h0isl3svqt1" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js"
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-M3N6TWR");
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <header>
+        <div class="flex row">
+            <p>
+                <a id="es" class="bold" onclick="botonEs()">ES</a> /
+                <a id="eu" class="light" onclick="botonEus()">EUS</a>
+            </p>
+        </div>
+    </header>
+
+    <section class="extras prensa">
+        <h1>MATERIAL PRENSA</h1>
+        <p>Aquí puedes encontrar todos los materiales descargables.</p>
+        <div class="flex column">
+            <a href="dossier.pdf" download>Dossier</a>
+            <a href="Material-Grafico.zip" download>Material gráfico</a>
+            <a href="Prentsa-oharra-Nota-de-prensa.docx" download>Nota de prensa</a>
+            <a href="https://ekoadrila.eus/Evento-Inauguracion.zip" download>Imágenes del evento de inauguración</a>
+        </div>
+    </section>
+
+    <script>
+        setTimeout(function() {
+            var options = {};
+            $(".loader").hide();
+        }, 1000);
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3N6TWR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

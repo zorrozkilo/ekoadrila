@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="img/favicon-ekoadrila.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>La Ekoadrila del Reciclaje</title>
+    <meta name="description"
+        content='¡Hola! Rellena el "Test del Reciclaje" de la Ekoadrila y entra en un súper sorteo. Y si nos ves por la calle, ¡regalo seguro! ¡Vamos a estar por toda Euskadi! ¡Infórmate aquí de cuándo vamos por tu zona!'>
+	<meta name="facebook-domain-verification" content="43oimjit10sd2mylv00h0isl3svqt1" />
+    <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/537c06dea3d2facbc19989c0.js"></script> <!-- End cookieyes banner -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M3N6TWR');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+    <div class="loader"></div>
+
+   
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="flex row animate__animated animate__fadeIn animate__delay-2s">
+            <p><a id="es" class="bold" onclick="botonEs()">ES</a> / <a id="eu" class="light"
+                    onclick="botonEus()">EUS</a></p>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <!--<div class="fonfo-animado"></div>-->
+    <div id="lottie" class="flex column">
+        <a href="#personajes" class="">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aqskuksv.json" background="transparent"
+                speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+        </a>
+    </div>
+
+    <section id="hero" class="hero flex">
+        <div id="hero-contenedor" class="flex row max-width">
+            <div id="hero-texto" class="flex column left">
+                <img class="flecha " src="img/Flecha.svg" alt="">
+                <div class="flex right">
+                    <img class=" " src="img/Ekoadrila.png" alt="">
+                </div>
+
+                <h1 class="cuando "><span class="barra">/</span>Aunque nuestro viaje haya terminado,</br>¡sigamos trabajando!</h1>
+
+                <!-- IMAGEN HERO MOVIL --> 
+
+                <!--<img class="premio-movil " src="img/ImagenPremio.jpeg" alt="">-->
+                <!--<img class="premio-movil " src="img/flysch-movil2.jpg" alt="">-->
+                <!--<img class="premio-movil " src="img/azurmendi-movil.jpg" alt="">-->
+                <img class="premio-movil " src="img/h-arima-movil.jpg" alt="">
+
+                <!-- TEXTO HERO --> 
+
+                <!--<p class="sorteo ">Sorteo de un fin de semana para 2 en las cabañas de los árboles de Zeanuri por completar el test del reciclaje. ¡Suerte!</p>-->
+                <!--<p class="sorteo-flysch ">Sorteo de una ruta en barco para 2 por los Flysch de Gipuzkoa por completar el test del reciclaje. ¡Suerte!</p>-->
+                <!--<p class="sorteo-azurmendi ">Sorteo de un de un menú para 2 en el restaurante Azurmendi por completar el test del reciclaje. ¡Suerte!</p>-->
+                <p class="sorteo-arima ">Nos da mucha pena que el viaje termine, pero estamos súper contentxs por todo lo que hemos conseguido. ¡Gracias por vuestro compromiso!</p>
+
+                <!--<div id="ctas-hero" class="flex row ">
+                    <a class="rombo movimiento repasar" href="#personajes">Repasar antes</a>
+                    <a class="hacer-test" href="#cuestionario">Hacer test</a>
+                </div>-->
+            </div>
+            <div id="hero-imagen" class="">
+
+                 <!-- IMAGEN HERO ESCRITORIO --> 
+
+                <!--<img src="img/ImagenPremio.jpeg" alt="">-->
+                <!--<img src="img/flysch-escritorio2.jpg" alt="">--> 
+                <!--<img src="img/azurmendi-escritorio.jpg" alt="">--> 
+                <img src="img/ekoadrila-final2.jpg" alt=""> 
+            </div>
+        </div>
+    </section>
+
+ <!-- PERSONAJES INDIVIDUALES -->
+
+ <section id="personajes-individuales">
+
+    <img class="boton-cerrar animate__animated animate__fadeIn" src="img/close.svg" alt=""
+        onclick="cerrarPersonaje()" style="display: none;">
+
+    <section id="lataburu" class="individual-personajes amarillo" style="display: none;">
+        <img class="boton-derecha animate__animated animate__fadeIn" src="img/left.svg" alt=""
+            onclick="fraskobide()">
+        <div class="contenedor-circulos flex row">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo-seleccion.svg" alt="">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="fraskobide()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="kajaguren()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt=""
+                onclick="detergenteberri()">
+        </div>
+        <div class="individual-personajes-contenedor flex row ">
+            <div class="individual-personajes-imagen animate__animated animate__fadeInLeft">
+                <img src="img/lataburu-personaje.png" alt="">
+            </div>
+            <div class="individual-personajes-texto">
+                <h2 class="hola">Hola, soy Lataburu Papelplatagaray.</h2>
+                <p class="todos">Todos los envases metálicos vamos al contenedor amarillo. To-dos: latas de
+                    conservas, de bebidas, bandejas de aluminio, aerosoles, tapones metálicos de botellas, tapas
+                    metálicas de frascos… </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fraskobide" class="individual-personajes verde" style="display: none;">
+        <img class="boton-izquierda animate__animated animate__fadeIn" src="img/left.svg" alt=""
+            onclick="lataburu()">
+        <img class="boton-derecha animate__animated animate__fadeIn" src="img/left.svg" alt=""
+            onclick="kajaguren()">
+        <div class="contenedor-circulos flex row">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="lataburu()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo-seleccion.svg" alt="">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="kajaguren()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt=""
+                onclick="detergenteberri()">
+        </div>
+        <div class="individual-personajes-contenedor flex row ">
+            <div class="individual-personajes-imagen animate__animated animate__fadeInLeft">
+                <img src="img/fraskobide-personaje.png" alt="">
+            </div>
+            <div class="individual-personajes-texto">
+                <h2 class="aqui">Aquí Fraskobide Botellamendi.</h2>
+                <p class="mi">Mi contenedor es el de color verde. Envases de vidrio, al verde.Pero solo envases de
+                    vidrio ¿eh? Repito: solo envases vidrio. Botellas, frascos, botes… No me mezcles con vasos de
+                    cristal ni espejos. Y tampoco eches las tapas ni tapones
+                    de ningún tipo.¡Aquí, solo vidrio! Gracias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kajaguren" class="individual-personajes azul" style="display: none;">
+        <img class="boton-izquierda animate__animated animate__fadeIn" src="img/left.svg" alt=""
+            onclick="fraskobide()">
+        <img class="boton-derecha animate__animated animate__fadeIn" src="img/left.svg" alt=""
+            onclick="detergenteberri()">
+        <div class="contenedor-circulos flex row">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="lataburu()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="fraskobide()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo-seleccion.svg" alt="">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt=""
+                onclick="detergenteberri()">
+        </div>
+        <div class="individual-personajes-contenedor flex row ">
+            <div class="individual-personajes-imagen animate__animated animate__fadeInLeft">
+                <img src="img/kajaguren-personaje.png" alt="">
+            </div>
+            <div class="individual-personajes-texto">
+                <h2 class="aupa">Aupa, soy Kajaguren Kartoiagoiti.</h2>
+                <p class="espero">Espero que me deposites siempre en el contenedor azul, el de los papeles y los
+                    cartones. Ahí vamos los diarios, las revistas, las hueveras de cartón, los envases de cartón,
+                    las bolsas de papel… ¡Servilletas usadas o platos de papel
+                    usado no por favor! </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="detergenteberri" class="individual-personajes amarillo" style="display: none;">
+        <img class="boton-izquierda animate__animated animate__fadeIn" src="img/left.svg" alt=""
+            onclick="kajaguren()">
+        <div class="contenedor-circulos flex row">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="lataburu()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="fraskobide()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo.svg" alt="" onclick="kajaguren()">
+            <img class=" animate__animated animate__fadeIn" src="img/circulo-seleccion.svg" alt="">
+        </div>
+        <div class="individual-personajes-contenedor flex row ">
+            <div class="individual-personajes-imagen animate__animated animate__fadeInLeft">
+                <img src="img/detergenteberri-personaje.png" alt="">
+            </div>
+            <div class="individual-personajes-texto">
+                <h2 class="yo">Yo soy Detergenteberri Mantekillaga.</h2>
+                <p class="al">Al contenedor amarillo, como todos los envases de plástico. Y somos una gran familia,
+                    mira: botellas de agua, envases de productos de limpieza, bolsas de congelados, tarrinas de
+                    mantequilla y de yogur, bandejas de corcho blanco, envoltorios
+                    de plástico, bolsas de plástico de las tiendas, etc. ¡Y briks también!</p>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+    <!-- PERSONAJES -->
+
+    <section id="personajes">
+        <div id="personajes-contenedor" class="max-width">
+            <div id="personajes-texto">
+                <h2 class="antes"><span class="barra">/</span>Antes de empezar, un pequeño repaso</h2>
+                <p class="ya">Ya me lo sé todo. <a href="#cuestionario">Ir directamente al test</a>.</p>
+            </div>
+            <div id="personajes-contenido" class="flex row">
+
+                <div class="personaje wow animate__animated animate__fadeIn" onclick="lataburu()">
+                    <div class="circulo-color"></div>
+                    <img src="img/lataburu-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Lataburu</br>papelplatagaray</h3>
+                    <p class="y-yo">¿Y yo dónde voy?</p>
+                </div>
+
+                <div class="personaje personaje-movil  wow animate__animated animate__fadeIn" onclick="infoLataburu()">
+                    <div class="circulo-color"></div>
+                    <img src="img/lataburu-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Lataburu</br>papelplatagaray</h3>
+                    <p class="y-yo">¿Y yo dónde voy?</p>
+                </div>
+
+                <div class="pregunta-personaje-movil amarillo lataburu-pregunta" onclick="infoLataburu()">
+                    <p class="y-yo">¿Y yo dónde voy?</p>
+                </div>
+                <div class="explicacion-personaje-movil movil-lataburu amarillo none lataburu-info">
+                    <div class="boton-cerrar-movil-contenedor">
+                        <img class="boton-cerrar-movil animate__animated animate__fadeIn" src="img/close.svg" alt=""
+                            onclick="infoLataburu()">
+                    </div>
+                    <h2 class="hola">Hola, soy Lataburu Papelplatagaray.</h2>
+                    <p class="todos">Todos los envases metálicos vamos al contenedor amarillo. To-dos: latas de
+                        conservas, de bebidas, bandejas de aluminio, aerosoles, tapones metálicos de botellas, tapas
+                        metálicas de frascos… </p>
+                </div>
+
+
+                <div class="personaje wow animate__animated animate__fadeIn" onclick="fraskobide()">
+                    <div class="circulo-color"></div>
+                    <img src="img/fraskobide-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Fraskobide</br>Botellamendi</h2>
+                        <p class="cual">¿Cuál es mi contenedor?</p>
+                </div>
+
+                <div class="personaje personaje-movil wow animate__animated animate__fadeIn" onclick="infoFraskobide()">
+                    <div class="circulo-color"></div>
+                    <img src="img/fraskobide-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Fraskobide</br>Botellamendi</h2>
+                        <p class="cual">¿Cuál es mi contenedor?</p>
+                </div>
+                <div class="pregunta-personaje-movil verde fraskobide-pregunta" onclick="infoFraskobide()">
+                    <p class="cual ">¿Cuál es mi contenedor?</p>
+                </div>
+                <div class="explicacion-personaje-movil movil-fraskobide verde none fraskobide-info">
+                    <div class="boton-cerrar-movil-contenedor">
+                        <img class="boton-cerrar-movil animate__animated animate__fadeIn" src="img/close.svg" alt=""
+                            onclick="infoFraskobide()">
+                    </div>
+                    <h2 class="aqui">Aquí Fraskobide Botellamendi.</h2>
+                    <p class="mi">Mi contenedor es el de color verde. Envases de vidrio, al verde.Pero solo envases de
+                        vidrio ¿eh? Repito: solo envases vidrio. Botellas, frascos, botes… No me mezcles con vasos de
+                        cristal ni espejos. Y tampoco eches las tapas ni tapones
+                        de ningún tipo.¡Aquí, solo vidrio! Gracias. </p>
+                </div>
+
+                <div class="personaje wow animate__animated animate__fadeIn" onclick="kajaguren()">
+                    <div class="circulo-color"></div>
+                    <img src="img/kajaguren-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Kajaguren</br>Kartoiagoiti</h3>
+                    <p class="donde">¿Dónde me depositarías?</p>
+                </div>
+
+                <div class="personaje personaje-movil wow animate__animated animate__fadeIn" onclick="infoKajaguren()">
+                    <div class="circulo-color"></div>
+                    <img src="img/kajaguren-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Kajaguren</br>Kartoiagoiti</h3>
+                    <p class="donde">¿Dónde me depositarías?</p>
+                </div>
+
+                <div class="pregunta-personaje-movil azul kajaguren-pregunta" onclick="infoKajaguren()">
+                    <p class="donde">¿Dónde me depositarías?</p>
+                </div>
+                <div class="explicacion-personaje-movil movil-kajaguren azul none kajaguren-info">
+                    <div class="boton-cerrar-movil-contenedor">
+                        <img class="boton-cerrar-movil animate__animated animate__fadeIn" src="img/close.svg" alt=""
+                            onclick="infoKajaguren()">
+                    </div>
+                    <h2 class="aupa">Aupa, soy Kajaguren Kartoiagoiti.</h2>
+                    <p class="espero">Espero que me deposites siempre en el contenedor azul, el de los papeles y los
+                        cartones. Ahí vamos los diarios, las revistas, las hueveras de cartón, los envases de cartón,
+                        las bolsas de papel… ¡Servilletas usadas o platos de papel
+                        usado no por favor!</p>
+                </div>
+
+                <div class="personaje wow animate__animated animate__fadeIn" onclick="detergenteberri()">
+                    <div class="circulo-color"></div>
+                    <img src="img/detergenteberri-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Detergenteberri</br>Mantekillaga</h3>
+                    <p class="adivina">Adivina dónde voy.</p>
+                </div>
+
+                <div class="personaje personaje-movil wow animate__animated animate__fadeIn"
+                    onclick="infoDetergenteberri()">
+                    <div class="circulo-color"></div>
+                    <img src="img/detergenteberri-circulo.png" alt="">
+                    <h3><span class="barra">/</span>Detergenteberri</br>Mantekillaga</h3>
+                    <p class="adivina">Adivina dónde voy.</p>
+                </div>
+
+                <div class="pregunta-personaje-movil amarillo detergenteberri-pregunta" onclick="infoDetergenteberri()">
+                    <p class="adivina">Adivina dónde voy.</p>
+                </div>
+                <div class="explicacion-personaje-movil movil-detergenteberri amarillo none detergenteberri-info">
+                    <div class="boton-cerrar-movil-contenedor">
+                        <img class="boton-cerrar-movil animate__animated animate__fadeIn" src="img/close.svg" alt=""
+                            onclick="infoDetergenteberri()">
+                    </div>
+                    <h2 class="yo">Yo soy Detergenteberri Mantekillaga.</h2>
+                    <p class="al">Al contenedor amarillo, como todos los envases de plástico. Y somos una gran familia,
+                        mira: botellas de agua, envases de productos de limpieza, bolsas de congelados, tarrinas de
+                        mantequilla y de yogur, bandejas de corcho blanco, envoltorios
+                        de plástico, bolsas de plástico de las tiendas, etc. ¡Y briks también!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUESTIONARIO -->
+
+    <section id="cuestionario">
+        <form action="https://eus.us6.list-manage.com/subscribe/post?u=67540c4643186400df3674f1b&amp;id=89a206351a"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+
+            <!--EMPEZAR PREGUNTAS-->
+
+            <div id="empezar-preguntas" class="contenedor-formulario flex degradado ">
+                <div class="contenedor-preguntas-respuestas width flex column">
+                    <h3 class="pregunta ahora">Y tú, ¿cuanto sabes de reciclaje? </h3>
+                    <p class="el-test">El “Test de Reciclaje Definitivo”. Tan solo 6 preguntas.</p>
+                    <a class="rombo movimiento empezar" onclick="siguientePregunta0()">Empezar</a>
+                </div>
+            </div>
+
+            <!--PREGUNTA 1-->
+            <div id="pregunta1" class="contenedor-formulario flex amarillo none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">01/06</h3>
+                        <h3 class="pregunta pregunta1">Un juguete de plástico, como es de plástico, al amarillo, ¿no?
+                        </h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <label class="pregunta1a" for="a1"><input type="radio" id="a1" name="pregunta1"
+                                    value="a" />A. Claro, mientras sea de plástico, puedes tirar lo que quieras.</label>
+                            <label class="pregunta1b" for="b1"><input type="radio" id="b1" name="pregunta1"
+                                    value="b" />B. ¡No! Al contenedor amarillo, solo envases.</label>
+                        </div>
+                        <p class=" falta-respuesta falta1 none">¿Tienes dudas? ¡No importa! Elige una opción.
+                        </p>
+                        <a class="rombo movimiento respuesta" onclick="siguientePregunta1()">Respuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--RESPUESTA 1-->
+
+            <div id="respuesta1" class="contenedor-formulario flex amarillo none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">01/06</h3>
+                        <h3 class="pregunta pregunta1">Un juguete de plástico, como es de plástico, al amarillo, ¿no?
+                        </h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <p id="respuesta1a-texto" class="respuesta1a">A. Oooh. No es correcto. Los juguetes y los
+                                productos de plástico como los cubos de playa, generan muchas dudas, pero recuerda
+                                siempre: al contenedor amarillo, solo envases. Nada más. Envases de plástico, de metal y
+                                briks.
+                                ¡Pero solo envases! ¡Sigue con la encuesta! Todavía estás a tiempo de conseguir tu
+                                regalo.</p>
+                            <p id="respuesta1b-texto" class="respuesta1b">B. ¡Muy bien, has acertado! Y eso que los
+                                juguetes y los productos de plástico como los cubos de playa, generan muchas dudas, pero
+                                recuerda siempre: al contenedor amarillo, solo envases. Nada más. Envases de plástico,
+                                de metal
+                                y briks.  ¡Pero solo envases!</p>
+                        </div>
+                        <a class="rombo movimiento siguiente-pregunta" onclick="siguienteRespuesta1()">Siguiente
+                            pregunta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--PREGUNTA 2-->
+
+            <div id="pregunta2" class="contenedor-formulario flex verde none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">02/06</h3>
+                        <h3 class="pregunta pregunta2">Si se te rompe un vaso de cristal, ¿lo echas al contenedor verde?
+                        </h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <label class="pregunta2a" for="a2"><input type="radio" id="a2" name="pregunta2"
+                                    value="a" />A. Sí. Vasos, espejos, bombillas y cristales en general, al
+                                verde.</label>
+                            <label class="pregunta2b" for="b2"><input type="radio" id="b2" name="pregunta2"
+                                    value="b" />B. ¡Nunca! Al verde solo envases de vidrio. Única y
+                                exclusivamente.</label>
+                        </div>
+                        <p class=" falta-respuesta falta2 none">¿Tienes dudas? ¡No importa! Elige una opción.
+                        </p>
+                        <a class="rombo movimiento respuesta" onclick="siguientePregunta2()">Comprobar respuesta</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--RESPUESTA 2-->
+
+            <div id="respuesta2" class="contenedor-formulario flex verde none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">02/06</h3>
+                        <h3 class="pregunta pregunta2">Si se te rompe un vaso de cristal, ¿lo echas al contenedor verde?
+                        </h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <p id="respuesta2a-texto" class="respuesta2a">A. ¡Oooh! Tu respuesta no es correcta. ¡Al
+                                verde SOLO envases de vidrio! Tarros de vidrio, botellas de vidrio, frascos de vidrio.
+                                Nada de vasos, bombillas o espejos. ¡Gracias! ¡Sigue con la encuesta! Todavía estás a
+                                tiempo
+                                de conseguir tu regalo.</p>
+                            <p id="respuesta2b-texto" class="respuesta2b">B. Esta era difícil, ¡y has acertado! ¡Al
+                                verde SOLO envases de vidrio! Tarros de vidrio, botellas de vidrio, frascos de vidrio.
+                                Nada de vasos, bombillas o espejos. ¡Gracias!</p>
+                        </div>
+                        <a class="rombo movimiento siguiente-pregunta" onclick="siguienteRespuesta2()">Siguiente
+                            pregunta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--PREGUNTA 3-->
+
+            <div id="pregunta3" class="contenedor-formulario flex azul none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">03/06</h3>
+                        <h3 class="pregunta pregunta3">¿Merece la pena el esfuerzo de reciclar?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <label class="pregunta3a" for="a3"><input type="radio" id="a3" name="pregunta3"
+                                    value="a" />A. No mucho, al final casi es mejor fabricar productos nuevos.</label>
+                            <label class="pregunta3b" for="b3"><input type="radio" id="b3" name="pregunta3"
+                                    value="b" />B. Claro que merece la pena. Cuesta menos reciclar que fabricar un nuevo
+                                producto.</label>
+                        </div>
+                        <p class=" falta-respuesta falta3 none">¿Tienes dudas? ¡No importa! Elige una opción.
+                        </p>
+                        <a class="rombo movimiento respuesta" onclick="siguientePregunta3()">Comprobar respuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--RESPUESTA 3-->
+
+            <div id="respuesta3" class="contenedor-formulario flex azul none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">03/06</h3>
+                        <h3 class="pregunta pregunta3">¿Merece la pena el esfuerzo de reciclar?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <p id="respuesta3a-texto" class="respuesta3a">A. ¡Qué dices! Reciclando ahorramos agua,
+                                energía y materia prima. Además, reducimos la contaminación que se produce en el proceso
+                                de obtención de la materia prima. ¡Claro que merece la pena! ¡Sigue con la encuesta!
+                                Todavía estás
+                                a tiempo de conseguir tu regalo.</p>
+                            <p id="respuesta3b-texto" class="respuesta3b">B. ¡Claro que sí! Reciclando ahorramos agua,
+                                energía y materia prima. Además, reducimos la contaminación que se produce en el proceso
+                                de obtención de la materia prima. ¡Claro que merece la pena!</p>
+                        </div>
+                        <a class="rombo movimiento siguiente-pregunta" onclick="siguienteRespuesta3()">Siguiente
+                            pregunta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--PREGUNTA 4-->
+
+            <div id="pregunta4" class="contenedor-formulario flex verde none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">04/06</h3>
+                        <h3 class="pregunta pregunta4">¿Quito las tapas de los frascos de vidrio antes de echarlos al
+                            contenedor verde?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <label class="pregunta4a" for="a4"><input type="radio" id="a4" name="pregunta4"
+                                    value="a" />A. ¡Siempre! Al contenedor verde, solo envases de vidrio.</label>
+                            <label class="pregunta4b" for="b4"><input type="radio" id="b4" name="pregunta4"
+                                    value="b" />B. No hace falta, eso lo separan en la planta de reciclaje.</label>
+                        </div>
+                        <p class=" falta-respuesta falta4 none">¿Tienes dudas? ¡No importa! Elige una opción.
+                        </p>
+                        <a class="rombo movimiento respuesta" onclick="siguientePregunta4()">Comprobar respuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--RESPUESTA 4-->
+
+            <div id="respuesta4" class="contenedor-formulario flex verde none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">04/06</h3>
+                        <h3 class="pregunta pregunta4">¿Quito las tapas de los frascos de vidrio antes de echarlos al
+                            contenedor verde?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <p id="respuesta4a-texto" class="respuesta4a">A. Efectivamente. Recuerda siempre: al
+                                contenedor verde, solo envases de vidrio: botellas de vidrio, tarros y frascos de vidrio
+                                SIN sus respectivas tapas.</p>
+                            <p id="respuesta4b-texto" class="respuesta4b">B. No es correcto. Recuerda siempre: al
+                                contenedor verde, solo envases de vidrio: botellas de vidrio, tarros y frascos de vidrio
+                                SIN sus respectivas tapas. ¡Sigue con la encuesta! Todavía estás a tiempo de conseguir
+                                tu regalo.</p>
+                        </div>
+                        <a class="rombo movimiento siguiente-pregunta" onclick="siguienteRespuesta4()">Siguiente
+                            pregunta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--PREGUNTA 5-->
+
+            <div id="pregunta5" class="contenedor-formulario flex azul none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">05/06</h3>
+                        <h3 class="pregunta pregunta5">¿La calidad de los productos reciclados es peor?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <label class="pregunta5a" for="a5"><input type="radio" id="a5" name="pregunta5"
+                                    value="a" />A. Sí, sí, en general, reciclado a reciclado la calidad va
+                                mermando.</label>
+                            <label class="pregunta5b" for="b5"><input type="radio" id="b5" name="pregunta5"
+                                    value="b" />B. No, la mayoría de los envases se pueden reciclar de manera
+                                ilimitada.</label>
+                        </div>
+                        <p class="falta-respuesta falta5 none">¿Tienes dudas? ¡No importa! Elige una opción.
+                        </p>
+                        <a class="rombo movimiento respuesta" onclick="siguientePregunta5()">Comprobar respuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--RESPUESTA 5-->
+
+            <div id="respuesta5" class="contenedor-formulario flex azul none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">05/06</h3>
+                        <h3 class="pregunta pregunta5">¿La calidad de los productos reciclados es peor?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <p id="respuesta5a-texto" class="respuesta5a">A. La respuesta correcta es… ¡qué va! En la
+                                mayoría de los envases, la calidad no va mermando reciclado a reciclado. Tanto el
+                                vidrio, como el aluminio y muchos plásticos pueden ser reciclados de forma ilimitada sin
+                                perder su calidad.
+                                ¡Sigue con la encuesta! Todavía estás a tiempo de conseguir tu regalo.</p>
+                            <p id="respuesta5b-texto" class="respuesta5b">B.¡Aplausos! Efectivamente, la calidad de la
+                                mayoría de los envases no va mermando reciclado a reciclado. Tanto el vidrio, como el
+                                aluminio y muchos plásticos pueden ser reciclados de forma ilimitada sin perder su
+                                calidad.</p>
+                        </div>
+                        <a class="rombo movimiento siguiente-pregunta" onclick="siguienteRespuesta5()">Siguiente
+                            pregunta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--PREGUNTA 6-->
+
+            <div id="pregunta6" class="contenedor-formulario flex amarillo none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">06/06</h3>
+                        <h3 class="pregunta pregunta6">¿Los aerosoles, se pueden reciclar?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <label class="pregunta6a" for="a6"><input type="radio" id="a6" name="pregunta6"
+                                    value="a" />A. Claro, son envases metálicos. Van al contenedor amarillo.</label>
+                            <label class="pregunta6b" for="b6"><input type="radio" id="b6" name="pregunta6"
+                                    value="b" />B. No, van a la basura general.</label>
+                        </div>
+                        <p class=" falta-respuesta falta6 none">¿Tienes dudas? ¡No importa! Elige una opción.
+                        </p>
+                        <a class="rombo movimiento respuesta" onclick="siguientePregunta6()">Comprobar respuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--RESPUESTA 6-->
+
+            <div id="respuesta6" class="contenedor-formulario flex amarillo none">
+                <div class="contenedor-preguntas-respuestas width flex row">
+                    <div class="contenedor-pregunta flex column">
+                        <h3 class="numero">06/06</h3>
+                        <h3 class="pregunta pregunta6">¿Los aerosoles, se pueden reciclar?</h3>
+                    </div>
+                    <div class="contenedor-respuesta flex column">
+                        <div class="contenido-respuesta flex column">
+                            <p id="respuesta6a-texto" class="respuesta6a">A.¡Has acertado! Y esta no era fácil. De
+                                hecho, hay un 22 % de población que a pesar de tener bolsa amarilla en casa, no los
+                                depositan ahí por no saber dónde deben ir. ¡Aerosoles, al amarillo!</p>
+                            <p id="respuesta6b-texto" class="respuesta6b">B. Oooh, no has acertado, pero esta pregunta
+                                no era fácil. De hecho, hay un 22 % de población que a pesar de tener bolsa amarilla en
+                                casa, no los depositan ahí por no saber dónde deben ir. ¡Aerosoles, al amarillo! ¡Estás
+                                a un
+                                solo paso de tu regalo!</p>
+                        </div>
+                        <a class="rombo movimiento terminar" onclick="siguienteRespuesta6()">Terminar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--EMAIL -->
+            <div id="email" class="contenedor-formulario flex degradado none">
+                <div class="contenedor-preguntas-respuestas width flex column">
+                    <h3 class="pregunta enhorabuena">¡Enhorabuena! Has llegado hasta el final</h3>
+                    <p class="ya-solo">Ya solo por eso, te mereces entrar en el sorteazo: fin de semana para 2 en Hotel Arima de Donosti. Déjanos tus datos para participar.
+                    </p>
+                    <div class="campos-formulario campos-formulario-movil flex row">
+                        <label class="nombre" for="mce-FNAME">Nombre y apellido*</label>
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" required>
+                    </div>
+                    <div class="campos-formulario campos-formulario-movil flex row">
+                        <label class="email" for="mce-EMAIL">Email*</label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    </div>
+                    <div class="campos-formulario flex  row">
+                        <input type="checkbox" name="email" id="aceptacion" required>
+                        <label class="acepto" id="label-checkbox" for="mce-EMAIL">Acepto las <a
+                                href="/terminos-y-condiciones" target="_blank">bases legales</a>*</label>
+                    </div>
+                    <p class="revisa-campos none">Revisa los campos antes de enviar el formulario.
+                    </p>
+                    <button type="submit" class="rombo movimiento enviar" class="boton-respuesta"
+                        id="mc-embedded-subscribe" onclick="enviarEmail()">Participar</button>
+                    <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button rombo">-->
+                </div>
+            </div>
+
+            <div id="gracias" class="contenedor-formulario flex degradado none">
+                <div class="contenedor-preguntas-respuestas width flex column">
+                    <h3 class="pregunta gracias">¡Gracias por participar!</h3>
+                    <!--<p class="el-sorteo">El sorteo se realizará el 2 de septiembre.</br>Si eres la persona ganadora, nos
+                        podremos en contacto contigo.</br>¡Suerte!</p>-->
+                </div>
+            </div>
+
+        </form>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>
+            (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+    </section>
+
+    <!-- MAPA -->
+
+    <section id="mapa">
+        <div id="mapa-contenedor" class="max-width">
+            <div id="mapa-texto" class="flex column">
+                <h2 class="tour">¡Sigue el tour de la Ekoadrila!</h2>
+                <p class="informate">Infórmate de cuándo pasa por tu localidad, acércate y consigue tu regalo.</p>
+            </div>
+
+            <div id="mapa-imagen-fechas" class="flex row">
+                <div id="mapa-imagen">
+                    <img src="img/mapa-ekoadrila.png" alt="">
+                </div>
+                <div id="mapa-fechas" class=" flex row">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <hr>
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">22/07</span> Donostia-San Sebastian</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Kontxa P.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">24/07</span> Bilbao</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Pl. Indautxu</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">24/07</span> Sopela</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Larrabasterra</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">25/07</span> Vitoria-Gasteiz</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Pl. Virgen Blanca</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">25/07</span> Laudio</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Herriko Pl.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">31/07</span> Eibar</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Untzaga Pl.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">31/07</span> Donostia-San Sebastian</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> P. Zurriola</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">01/08</span> Bakio</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Bentako Plaza</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">01/08</span> Plentzia</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> P. Ondarreta / Pl. Astillero</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">02/08</span> Gernika</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span>Foru Pl.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">07/08</span> Vitoria-Gasteiz</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Pl. Mercado Abastos</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">07/08</span> Agurain</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Pl. San Juan</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">08/08</span> Orio</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Hondartza P.</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <hr class="hr-movil">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">08/08</span> Deba</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Cardenas P.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">14/08</span> Donostia-San Sebastian</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Alderdieder</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">14/08</span> Zumaia</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Itzurun</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">15/08</span> Durango</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Andra Mari kalea</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">15/08</span> Lekeitio</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Pl. Independentzia</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">21/08</span> Laguardia</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Pl. Mayor</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">21/08</span> Landa</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Acceso pantano</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">22/08</span> Zalla</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Pl. Euskadi</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">22/08</span> Portugalete</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Pl. del Solar</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">28/08</span> Tolosa</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span>P. Triangulo</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">28/08</span> Arrasate</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">17:00 — 20:00 </span> Pl. Sebero Altube</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item">
+                            <a class="accordion-link">
+                                <div class="flex">
+                                    <h3><span class="light">29/08</span> Bilbao</h3>
+                                </div>
+                                <img src="img/plus.svg" class="plus ">
+                                <img src="img/cerrar.svg" class="close none">
+                            </a>
+                            <div class="answer none">
+                                <p><span class="hora">11:00 - 14:00 </span> Arenal</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- INSTAGRAM -->
+
+    <section id="instagram">
+        <div id="instagram-contenedor" class="max-width">
+            <div id="instagram-texto">
+                <h2 class="sigue">¡Sigue nuestras aventuras en las redes!</h2>
+                <p class="puedes">Puedes seguir a los protagonistas en sus perfiles personales de Instagram o la
+                    Ekoadrila al completo en su cuenta de <a id="facebook" class="facebook"
+                        href="https://www.facebook.com/Ekoadrila" target="_blank">Facebook</a>.</p>
+            </div>
+            <div class="instagram-fila instagram-fila1 flex row">
+                <div class="personaje-instagram flex column">
+                    <img src="img/fraskobide-circulo-insta.png" alt="">
+                    <a href="https://www.instagram.com/fraskobide/" target="_blank">@Fraskobide</a>
+                </div>
+                <div class="feed-instagram">
+                    <div class="elfsight-app-915f9da3-9e48-4870-b4ab-03ffd05684e9"></div>
+                </div>
+            </div>
+            <div class="instagram-fila flex row">
+                <div class="personaje-instagram flex column">
+                    <img src="img/detergenteberri-circulo-insta.png" alt="">
+                    <a href="https://www.instagram.com/detergenteberri/" target="_blank">@Detergenteberri</a>
+                </div>
+                <div class="feed-instagram">
+                    <div class="elfsight-app-5c330fb6-fff9-41d4-b8e3-4abf6b8c63a8"></div>
+                </div>
+            </div>
+            <div class="instagram-fila flex row">
+                <div class="personaje-instagram flex column">
+                    <img src="img/kajaguren-circulo-insta.png" alt="">
+                    <a href="https://www.instagram.com/kajaguren/" target="_blank">@Kajaguren</a>
+                </div>
+                <div class="feed-instagram">
+                    <div class="elfsight-app-a9ad236f-4d35-4598-9b0d-4563074349ff"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div id="logos" class="flex row">
+            <img src="img/logo-ecovidrio.svg" alt="">
+            <img src="img/logo-ecoembes.svg" alt="">
+            <img src="img/logo-gobierno-vasco.svg" alt="">
+        </div>
+        <div id="info" class="flex row">
+            <a class="material" href="/material-prensa" target="_blank">Material prensa</a>
+            <a class="aviso" href="/terminos-y-condiciones" target="_blank">Bases legales</a>
+            <a class="cookies" href="/politica-de-cookies" target="_blank">Política de cookies</a>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/traduccion.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3N6TWR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
